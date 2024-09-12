@@ -1,0 +1,258 @@
+.main_container{
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  padding: 20px;
+  padding-bottom: 0px;
+} 
+.hero{
+  height: 70vh;
+  margin: 10px auto;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_content{
+  padding: 20px;
+  margin: 10px auto;
+  width: 50%;
+  background-color: transparent;
+}
+.hero_image{
+  padding: 10px;
+  margin: 10px auto;
+  width: 50%;
+  background-color: transparent;
+}
+.hero_image img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Feature items */
+.cards{
+  display: grid;
+  grid-template-columns: repeat(4,25%);
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: transparent;
+}
+.card_contents{
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,.4);
+}
+.card_contents:hover{
+  background-color: rgba(0,0,0,.2);
+}
+.card_items{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.card_body{
+  padding: 1px;
+  margin-top: 10px;
+}
+.card_image{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* Special Card */
+.special_card{
+  padding: 10px;
+  width: 100%;
+}
+.special_card_content{
+  background-color: transparent;
+  padding: 20px;
+}
+.special_card_items{
+  padding: 20px;
+}
+
+/* Custom CSS styles for Perfect section */
+.perfect {
+  padding: 80px 0;
+  background-color: #fff;
+  }
+  
+  .perfect .section-heading {
+  font-size: 3rem;
+  color: #333;
+  }
+  
+  .perfect .section-subheading {
+  font-size: 1.2rem;
+  color: #777;
+  }
+  
+  .perfect h3 {
+  font-size: 2rem;
+  color: #333;
+  }
+  
+  .perfect p {
+  font-size: 1.1rem;
+  color: #666;
+  }
+  
+
+/* Custom CSS styles for Feature section */
+.features {
+  padding: 80px 0;
+  background-color: #fff;
+  }
+  
+  .features .section-heading {
+  font-size: 3rem;
+  color: #333;
+  }
+  
+  .features .section-subheading {
+  font-size: 1.2rem;
+  color: #777;
+  }
+  
+  .features h3 {
+  font-size: 2rem;
+  color: #333;
+  }
+  
+  .features p {
+  font-size: 1.1rem;
+  color: #666;
+  }
+  
+/* Custom CSS styles for How It Works section */
+.how-it-works {
+  padding: 80px 0;
+}
+
+.how-it-works-heading {
+  font-size: 3rem;
+  color: #333;
+}
+
+.how-it-work-subheading {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.how-it-works-item {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.how-it-works-item .icon {
+  font-size: 3rem;
+  color: #007bff; 
+  margin-bottom: 20px;
+}
+
+.how-it-works-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.how-it-works-item p {
+  font-size: 1.1rem;
+  color: #666;
+}
+/* Custom CSS styles for Why Us section */
+.why-us {
+padding: 80px 0;
+}
+
+.why-us .section-heading {
+font-size: 3rem;
+color: #333;
+}
+
+.why-us .section-subheading {
+font-size: 1.2rem;
+color: #777;
+}
+
+.why-us-item {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.why-us-item .icon {
+font-size: 3rem;
+color: #007bff; 
+margin-bottom: 20px;
+}
+
+.why-us-item h3 {
+font-size: 1.5rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.why-us-item p {
+font-size: 1.1rem;
+color: #666;
+}
+/* Start card */
+.start_card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+}
+.start_text, .start_image{
+  width: 50%;
+  background-color: transparent;
+}
+.start_image img{
+  width: 100%;
+}
+
+@media screen and (max-width:800px) {
+  .main_container{
+    padding: 10px;
+  }
+  .hero{
+      flex-direction: column;
+      height: fit-content;
+      background-color: #fff;
+      padding: 10px;
+      margin: 0;
+  }
+  .hero_content, .hero_image{
+      width: 100%;
+      background-color: transparent;
+  }
+  .cards{
+      grid-template-columns: repeat(2,50%);
+  }
+  .perfect,
+  .features,
+  .how-it-works,
+  .why-us{
+    padding: 20px;
+  }
+  .features .section-heading{
+    font-size: 2.5rem;
+  }
+  .start_card{
+    flex-direction: column;
+  }
+  .start_text, .start_image{
+    width: 100%;
+    padding: 20px;
+  }
+}

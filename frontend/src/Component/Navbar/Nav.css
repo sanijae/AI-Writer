@@ -1,0 +1,128 @@
+.my-navbar {
+  background-color: #fff;
+  color: #0097B2;
+  padding: 0px 10px;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  box-shadow:2px 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brands {
+  color: #0097B2;
+  background-color: transparent;
+  padding: 15px 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.brand-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
+.navbar-brands .title{
+  color: #0097B2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desktop-nav {
+  display: none;
+  background-color: transparent;
+  padding: 0px;
+  align-items: center;
+}
+
+.mobile-nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-nav .nav-item{
+  margin-left: 5px;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 15px 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.desktop-nav .nav-item:hover, .mobile-nav .nav-item:hover{
+  color: rgba(0,0,0,.6);
+}
+.mobile-nav .nav-item {
+  margin-left: 10px;
+  color: #000;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-item button{
+  border: none;
+  background-color: transparent;
+  color: #0097B2;
+  font-weight: bold;
+}
+.nav-item button:hover{
+  color: rgba(0,0,0,.6);
+}
+.desktop-nav .premium{
+  background-color: #fbbc05;
+  color: #fff;
+  font-weight: bold;
+}
+.premium:hover {
+  color: #0097B2;
+}
+.desktop-nav .login{
+  background-color: #0097B2;
+  color: #fff;
+  padding: 15px ;
+  font-weight: bold;
+}
+.desktop-nav .login:hover{
+  background-color: #fff;
+  border: 1px solid #0097B2;
+}
+.desktop-nav .login a:hover{
+  color: #0097B2;
+}
+
+@media (min-width: 800px) {
+  .desktop-nav {
+    display: flex;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
